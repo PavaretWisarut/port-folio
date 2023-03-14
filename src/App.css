@@ -20,5 +20,12 @@ body {
 
 /* navbar Component */
 
+/* Contact Component */
+.contact-box {
+    background-color: #FFF8F8;
+    border-radius: 20px;
+    width: auto;
+    height: 100%;
+}
 
 

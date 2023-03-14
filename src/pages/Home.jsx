@@ -29,33 +29,8 @@ function Home() {
                 <hr></hr>
                 <h6><b><AiTwotonePhone style={{marginRight:'1%' , marginBottom:'0.5%'}}/>Phone</b> : 094-251-3429</h6>
               </Col>
-            </Row>
-           
-            {/* <Row>
-              <Col style={{ textAlign: "right" }} sm={12}>
-                Programmer , Backend Developer
-              </Col>
-            </Row> */}
+            </Row>   
             <p></p>
-            {/* <hr></hr> */}
-            {/* <Col>
-              <Row>
-                <h6 style={{ textAlign: "right" }}>Age : 22 Years Old</h6>
-              </Row>
-              <Row>
-                <h6 style={{ textAlign: "right" }}>
-                  Email : beerkungz1230@gmail.com
-                </h6>
-              </Row>
-              <Row>
-                <h6 style={{ textAlign: "right" }}>
-                  Github : https://github.com/PavaretWisarut
-                </h6>
-              </Row>
-              <Row>
-                <h6 style={{ textAlign: "right" }}>Phone : 094-251-3429</h6>
-              </Row>
-            </Col> */}
             <Row style={{ marginTop: "10%" }}>
               <Navbar style={{ backgroundColor: "#F4656D" , borderRadius:"20px"}}>
                 <Navbar.Brand

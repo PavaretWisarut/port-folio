@@ -5,6 +5,8 @@ import {
 
 const HOME = React.lazy(() => import("../pages/Home"));
 const SKILL = React.lazy(() => import("../pages/Skill"));
+const CONTACT = React.lazy(() => import("../pages/Contact"));
+const EXP = React.lazy(() => import("../pages/Experience"));
 const ERROR = React.lazy(() => import("../pages/Error"));
 
 const router = createBrowserRouter([
@@ -15,6 +17,14 @@ const router = createBrowserRouter([
     {
         path: "/skill",
         element: <SKILL />
+    },
+    {
+        path: "/contact",
+        element: <CONTACT />
+    },
+    {
+        path: "/experience",
+        element: <EXP />
     },
     {
         path: "*",
