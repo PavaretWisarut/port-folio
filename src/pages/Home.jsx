@@ -37,7 +37,7 @@ function Home() {
                     />
                     Age
                   </b>{" "}
-                  : 22 Years Old
+                  : 24 November 2000
                 </h6>
                 <hr></hr>
                 <h6>
