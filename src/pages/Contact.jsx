@@ -11,7 +11,7 @@ function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [phone, setPhone] = useState(0);
+  const [phone, setPhone] = useState();
 
   const changeName = (e) => {
     setName(e.target.value);
@@ -25,12 +25,6 @@ function Contact() {
   const changePhone = (e) => {
     setPhone(e.target.value);
   };
-  //   const page = (e) => {
-  //     let items = []
-  //     e.preventDefault();
-  //     items.push(name , email , message)
-  //     console.log(items);
-  // }
 
   let showAlert = (e) => {
     let items = [];
@@ -46,7 +40,7 @@ function Contact() {
       cancelButtonColor: "#d33",
       confirmButtonText: "Send an email",
     }).then((result) => {
-      if (result.isConfirmed && name !== "" && email !== "" && phone !== 0) {
+      if (result.isConfirmed && name !== "" && email !== "" && phone !== undefined) {
         Swal.fire({
           icon: "success",
           text: "Email was successfully sending ...",
@@ -104,8 +98,8 @@ function Contact() {
                   <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label className="required">Phone</Form.Label>
                     <Form.Control
-                      type="tel"
-                      placeholder="092xxxxxxx"
+                      type="number"
+                      placeholder="Only number are allowed"
                       maxLength="10"
                       onChange={changePhone}
                       value={phone}
