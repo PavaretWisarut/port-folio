@@ -7,6 +7,8 @@
     background-color: #EED6D3; 
 } */
 
+html { scroll-behavior: smooth; } 
+
 body {
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
@@ -47,4 +49,13 @@ body {
     height: 100%;
 }
 
+/* Skill Component */
+.Skill_list {
+    margin-left: 20%;
+}
 
+/* Experience Component */
+
+/* .position_list {
+
+} */

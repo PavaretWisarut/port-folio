@@ -26,7 +26,7 @@ function Home() {
                   style={{ marginTop: "30%", marginLeft: "20%" }}
                 ></img>
               </Col>
-              <Col style={{ textAlign: "center", marginTop: "5%" }} sm={6}>
+              <Col style={{ textAlign: "center", marginTop: "5%" }} sm={7 }>
                 <h3>I'm Pavaret Wisarut</h3>
                 <h5>Programmer , Backend Developer</h5>
                 <hr></hr>
@@ -47,7 +47,7 @@ function Home() {
                     />
                     Email
                   </b>
-                  : beerkungz1230@gmail.com
+                  : pavaret.wisarut@gmail.com
                 </h6>
                 <hr></hr>
                 <h6>

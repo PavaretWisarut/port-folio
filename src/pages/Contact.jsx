@@ -3,7 +3,7 @@ import NavBar from "../components/NavBar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col, Navbar, Form, Button } from "react-bootstrap";
 import { BsFacebook, BsInstagram, BsFillPeopleFill } from "react-icons/bs";
-import { AiFillGithub, AiTwotoneMail, AiTwotonePhone } from "react-icons/ai";
+import { AiFillGithub, AiTwotoneMail, AiTwotonePhone  } from "react-icons/ai";
 import QR from "../assets/qr.jpg";
 import "../App.css";
 function Contact() {
@@ -14,8 +14,8 @@ function Contact() {
         <form>
           <Row>
             <div className="prop">
-              <Col style={{ textAlign: "center", marginTop: "5%" }} sm={12}>
-                <h3>Contact Me</h3>
+              <Col style={{ textAlign: "center", marginTop: "3%" }} sm={12}>
+                <h3><i>Contact Me</i></h3>
                 <hr></hr>
               </Col>
 
@@ -52,7 +52,7 @@ function Contact() {
                 <Col style={{ textAlign: "center" }} sm={6}>
                   <div className="contact-box">
                     <h6 style={{marginTop:'1%' , paddingTop:'1%'}}><b>Contact Me For Work</b></h6>
-                    <h6>Email : beerkungz1230@gmail.com</h6>
+                    <h6>Email : pavaret.wisarut@gmail.com</h6>
                     <hr></hr>
                     <h6><b>My line QR code</b></h6>
                     <img src={QR} width="40%" height="50%" alt="line QR"></img>
@@ -60,6 +60,7 @@ function Contact() {
                 </Col>
               </Row>
               <Row>
+                <p></p>
                 <Col sm={6}>
                   <Button
                     style={{ width: "100%" }}
