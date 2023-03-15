@@ -27,9 +27,8 @@ function Contact() {
   };
 
   let showAlert = (e) => {
-    let items = [];
+    let items = {name, email, phone, message};
     e.preventDefault();
-    items.push(name, email, phone, message);
     console.log(items);
     Swal.fire({
       title: "Sending ?",
@@ -40,7 +39,12 @@ function Contact() {
       cancelButtonColor: "#d33",
       confirmButtonText: "Send an email",
     }).then((result) => {
-      if (result.isConfirmed && name !== "" && email !== "" && phone !== undefined) {
+      if (
+        result.isConfirmed &&
+        name !== "" &&
+        email !== "" &&
+        phone !== undefined
+      ) {
         Swal.fire({
           icon: "success",
           text: "Email was successfully sending ...",
