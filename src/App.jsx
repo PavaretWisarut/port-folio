@@ -1,7 +1,6 @@
-import React,{useEffect} from 'react'
+import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Container from 'react-bootstrap/Container';
-import { useNavigate, RouterProvider } from "react-router-dom"
+import { RouterProvider } from "react-router-dom"
 import router from './config/router.js';
 import './App.css'
 

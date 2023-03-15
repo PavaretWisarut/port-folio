@@ -52,6 +52,10 @@ body {
     height: 100%;
 }
 
+.required:after {
+    content:" *";
+    color: red;
+  }
 /* Skill Component */
 .Skill_list {
     margin-left: 20%;
