@@ -7,6 +7,7 @@ import { AiFillGithub, AiFillHtml5 } from "react-icons/ai";
 import { IoLogoCss3, IoLogoNodejs } from "react-icons/io";
 import { DiJavascript, DiPython, DiReact } from "react-icons/di";
 import { SiTypescript, SiPhp, SiMysql, SiPostgresql } from "react-icons/si";
+import { BiGitBranch } from "react-icons/bi"
 import { VscJson } from "react-icons/vsc";
 import { GrGraphQl } from "react-icons/gr";
 import "../App.css";
@@ -25,7 +26,7 @@ function Skill() {
             <Row>
               <Col style={{ textAlign: "center", marginTop: "3%" }} sm={12}>
                 <h3>
-                  <i>Programming Language Skills</i>
+                  <i>Expertise</i>
                 </h3>
               </Col>
             </Row>
@@ -56,10 +57,18 @@ function Skill() {
                     <DiPython style={{ marginRight: "2%" }} />
                     Python
                   </li>
+                  <li>
+                    <BiGitBranch style={{ marginRight: "2%" }} />
+                    Git
+                  </li>
                 </ul>
               </Col>
               <Col>
                 <ul className="Skill_list">
+                <li>
+                    <AiFillGithub style={{ marginRight: "2%" }} />
+                    GitHub
+                  </li>
                   <li>
                     <IoLogoNodejs style={{ marginRight: "2%" }} />
                     ExpressJS
