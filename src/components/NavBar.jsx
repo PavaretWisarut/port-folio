@@ -10,9 +10,9 @@ function NavBar() {
         <Container>
           <Navbar.Brand href="/">My Portfolio</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="/skill">Skill</Nav.Link>
-            <Nav.Link href="/experience">Experience</Nav.Link>
-            <Nav.Link href="/contact">Contact</Nav.Link>
+            <Nav.Link className="navigator" href="/skill">Skill</Nav.Link>
+            <Nav.Link className="navigator" href="/experience">Experience</Nav.Link>
+            <Nav.Link className="navigator" href="/contact">Contact</Nav.Link>
           </Nav>
         </Container>
       </Navbar>

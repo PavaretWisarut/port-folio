@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import NavBar from "../components/NavBar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col, Navbar, Form, Button } from "react-bootstrap";
@@ -7,11 +7,30 @@ import { AiFillGithub, AiTwotoneMail, AiTwotonePhone  } from "react-icons/ai";
 import QR from "../assets/qr.jpg";
 import "../App.css";
 function Contact() {
+  const [name , setName] = useState('')
+  const [email , setEmail] = useState('')
+  const [message , setMessage] = useState('')
+
+  const changeName = (e) =>{
+    setName(e.target.value)
+  }
+  const changeEmail = (e) =>{
+    setEmail(e.target.value)
+  }
+  const changeMessage = (e) =>{
+    setMessage(e.target.value)
+  }
+  const page = (e) => {
+    let items = []
+    e.preventDefault();
+    items.push(name , email , message)
+    console.log(items);
+}
   return (
     <div>
       <NavBar />
       <Container>
-        <form>
+        <form >
           <Row>
             <div className="prop">
               <Col style={{ textAlign: "center", marginTop: "3%" }} sm={12}>
@@ -28,7 +47,9 @@ function Contact() {
                     <Form.Label>Full Name</Form.Label>
                     <Form.Control
                       type="text"
-                      placeholder="Mr.Pavaret Wisarut"
+                      placeholder="Mr.Samson Sukdee"
+                      onChange={changeName}
+                      value={name}
                     />
                   </Form.Group>
 
@@ -36,7 +57,9 @@ function Contact() {
                     <Form.Label>Email</Form.Label>
                     <Form.Control
                       type="email"
-                      placeholder="beerkungz1230@gmail.com"
+                      placeholder="samson.sd@gmail.com"
+                      onChange={changeEmail}
+                      value={email}
                     />
                   </Form.Group>
 
@@ -45,7 +68,7 @@ function Contact() {
                     controlId="exampleForm.ControlTextarea1"
                   >
                     <Form.Label>Message</Form.Label>
-                    <Form.Control as="textarea" rows={3} />
+                    <Form.Control as="textarea" rows={3} onChange={changeMessage} value={message} />
                   </Form.Group>
                 </Col>
 
@@ -66,6 +89,7 @@ function Contact() {
                     style={{ width: "100%" }}
                     variant="dark"
                     type="submit"
+                    onClick={page}
                   >
                     Send Contact
                   </Button>
