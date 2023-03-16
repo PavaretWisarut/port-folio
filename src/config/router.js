@@ -3,6 +3,7 @@ import {
     createBrowserRouter,
 } from "react-router-dom";
 
+// import HOME from "../pages/Home"
 const HOME = React.lazy(() => import("../pages/Home"));
 const SKILL = React.lazy(() => import("../pages/Skill"));
 const CONTACT = React.lazy(() => import("../pages/Contact"));

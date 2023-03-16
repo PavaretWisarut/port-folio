@@ -46,10 +46,21 @@ input::-webkit-inner-spin-button {
 
 
 /* navbar Component */
-.navigator:hover {
+.navigators {
+  color:white;
+  text-decoration: none;
+}
+
+.nav-link:hover >.navigators {
+   display: inline-block; 
+   /* -webkit-transform: rotate(10deg);
+   -moz-transform: rotate(10deg);
+   -o-transform: rotate(10deg);  */
     transform: translateY(-10px);
     color: #93ffff;
 }
+
+
 /* Contact Component */
 .contact-box {
     background-color: #FFF8F8;
