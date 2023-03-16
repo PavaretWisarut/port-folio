@@ -39,15 +39,16 @@ function Experience() {
                     marginRight: "auto",
                   }}
                 >
+                  <Card.Title style={{ textAlign: "center" , marginTop: "5%"}}>
+                      <b>InterSET. Research and Solution.</b>
+                    </Card.Title>
                   <Card.Img
                     variant="top"
                     src={interset}
-                    style={{ marginTop: "5%", width: "50%", marginLeft: "25%" }}
+                    style={{marginTop: "1%" , width: "30%", marginLeft: "auto" , marginRight: "auto" }}
                   />
                   <Card.Body>
-                    <Card.Title style={{ textAlign: "center" }}>
-                      <b>InterSET. Research and Solution.</b>
-                    </Card.Title>
+              
                     <Card.Text>
                       <b>1 December 2022 - 31 March 2023</b>
                       <br></br>
@@ -74,17 +75,18 @@ function Experience() {
             <Row>
               <Col sm={12}>
                 <Card style={{ width: "60%", margin: "auto" }}>
-                  <Card.Img
-                    variant="top"
-                    src={satit}
-                    style={{ marginTop: "5%", width: "50%", marginLeft: "25%" }}
-                  />
-                  <Card.Body>
-                    <Card.Title style={{ textAlign: "center" }}>
+                <Card.Title style={{ textAlign: "center" , marginTop: "5%" }}>
                       <b>
                         Chandrakasem Rajabhat University Demostration School
                       </b>
                     </Card.Title>
+                  <Card.Img
+                    variant="top"
+                    src={satit}
+                    style={{ marginTop: "1%" , width: "30%", marginLeft: "auto" , marginRight: "auto"  }}
+                  />
+                  <Card.Body>
+                    
                     <Card.Text>
                       <b>15 August 2022 - 22 September 2022 </b>
                       <br></br>
@@ -110,15 +112,16 @@ function Experience() {
             <Row>
               <Col sm={12}>
                 <Card style={{ width: "60%", margin: "auto" }}>
+                <Card.Title style={{ textAlign: "center" , marginTop: "5%" }}>
+                      <b>MC THAI COMPANY LIMITED</b>
+                    </Card.Title>
                   <Card.Img
                     variant="top"
                     src={mcd}
-                    style={{ marginTop: "5%" }}
+                    style={{marginTop: "1%" , width: "30%", marginLeft: "auto" , marginRight: "auto"  }}
                   />
                   <Card.Body>
-                    <Card.Title style={{ textAlign: "center" }}>
-                      <b>MC THAI COMPANY LIMITED</b>
-                    </Card.Title>
+                    
                     <Card.Text>
                       <b>1 March 2016 - 31 June 2022 </b>
                       <br></br>

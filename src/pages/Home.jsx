@@ -29,6 +29,7 @@ function Home() {
                     marginTop: "30%",
                     marginLeft: "auto",
                     marginRight: "auto",
+                    borderRadius:"20px",
                   }}
                 ></img>
               </Col>
