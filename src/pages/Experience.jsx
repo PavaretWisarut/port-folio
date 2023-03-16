@@ -14,8 +14,6 @@ import satit from "../assets/satit.png";
 import interset from "../assets/new-site.jpg";
 import "../App.css";
 function Experience() {
-  
-
   return (
     <div>
       <div id="on-top"></div>
@@ -31,10 +29,16 @@ function Experience() {
                 <hr></hr>
               </Col>
             </Row>
-            
+
             <Row>
               <Col sm={12}>
-                <Card style={{ width: "60%", margin: "auto" }}>
+                <Card
+                  style={{
+                    width: "60%",
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                  }}
+                >
                   <Card.Img
                     variant="top"
                     src={interset}
@@ -65,7 +69,7 @@ function Experience() {
                 </Card>
               </Col>
             </Row>
-            
+
             <p></p>
             <Row>
               <Col sm={12}>
@@ -135,7 +139,6 @@ function Experience() {
               </Col>
             </Row>
 
-            
             <Row>
               <a href="#on-top" className="button-27">
                 Back to Top
