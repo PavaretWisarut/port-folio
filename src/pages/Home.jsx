@@ -23,10 +23,16 @@ function Home() {
                   alt="profile"
                   width="70%"
                   height="70%"
-                  style={{ marginTop: "30%", marginLeft: "20%" }}
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    marginTop: "30%",
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                  }}
                 ></img>
               </Col>
-              <Col style={{ textAlign: "center", marginTop: "5%" }} sm={7 }>
+              <Col style={{ textAlign: "center", marginTop: "5%" }} sm={7}>
                 <h3>I'm Pavaret Wisarut</h3>
                 <h5>Programmer , Backend Developer</h5>
                 <hr></hr>

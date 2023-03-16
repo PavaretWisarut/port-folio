@@ -31,30 +31,33 @@ function Experience() {
                 <hr></hr>
               </Col>
             </Row>
+            
             <Row>
               <Col sm={12}>
                 <Card style={{ width: "60%", margin: "auto" }}>
                   <Card.Img
                     variant="top"
-                    src={mcd}
-                    style={{ marginTop: "5%" }}
+                    src={interset}
+                    style={{ marginTop: "5%", width: "50%", marginLeft: "25%" }}
                   />
                   <Card.Body>
                     <Card.Title style={{ textAlign: "center" }}>
-                      <b>MC THAI COMPANY LIMITED</b>
+                      <b>InterSET. Research and Solution.</b>
                     </Card.Title>
                     <Card.Text>
-                      <b>1 March 2016 - 31 June 2022 </b>
+                      <b>1 December 2022 - 31 March 2023</b>
                       <br></br>
-                      <b>Position : </b>Shop assistant
+                      <b>Internship 4 months</b>
+                      <br></br>
+                      <b>Position : </b>Backend Developer
                       <ul className="position_list">
                         <li>
-                          Receive a list of customer orders and deliver customer
-                          orders.
+                          Create a REST API to connect to the Front End for the
+                          Test Management Tools system.{" "}
                         </li>
                         <li>
-                          Make food and drink menus according to the orders
-                          received.
+                          Create a GraphQL API to connect to the front end for
+                          HR Connext.
                         </li>
                       </ul>
                     </Card.Text>
@@ -62,7 +65,7 @@ function Experience() {
                 </Card>
               </Col>
             </Row>
-
+            
             <p></p>
             <Row>
               <Col sm={12}>
@@ -105,27 +108,25 @@ function Experience() {
                 <Card style={{ width: "60%", margin: "auto" }}>
                   <Card.Img
                     variant="top"
-                    src={interset}
-                    style={{ marginTop: "5%", width: "50%", marginLeft: "25%" }}
+                    src={mcd}
+                    style={{ marginTop: "5%" }}
                   />
                   <Card.Body>
                     <Card.Title style={{ textAlign: "center" }}>
-                      <b>InterSET. Research and Solution.</b>
+                      <b>MC THAI COMPANY LIMITED</b>
                     </Card.Title>
                     <Card.Text>
-                      <b>1 December 2022 - 31 March 2023</b>
+                      <b>1 March 2016 - 31 June 2022 </b>
                       <br></br>
-                      <b>Internship 4 months</b>
-                      <br></br>
-                      <b>Position : </b>Backend Developer
+                      <b>Position : </b>Shop assistant
                       <ul className="position_list">
                         <li>
-                          Create a REST API to connect to the Front End for the
-                          Test Management Tools system.{" "}
+                          Receive a list of customer orders and deliver customer
+                          orders.
                         </li>
                         <li>
-                          Create a GraphQL API to connect to the front end for
-                          HR Connext.
+                          Make food and drink menus according to the orders
+                          received.
                         </li>
                       </ul>
                     </Card.Text>
@@ -133,6 +134,8 @@ function Experience() {
                 </Card>
               </Col>
             </Row>
+
+            
             <Row>
               <a href="#on-top" className="button-27">
                 Back to Top
