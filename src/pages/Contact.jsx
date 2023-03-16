@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import NavBar from "../components/NavBar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col, Navbar, Form, Button } from "react-bootstrap";
 import { BsFacebook, BsInstagram } from "react-icons/bs";
 import { AiFillGithub } from "react-icons/ai";
+import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import QR from "../assets/qr.jpg";
 import "../App.css";
@@ -12,6 +13,15 @@ function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [phone, setPhone] = useState();
+
+  const form = useRef();
+
+  const resetForm = () => {
+    setName("")
+    setEmail("")
+    setMessage("")
+    setPhone("")
+  }
 
   const changeName = (e) => {
     setName(e.target.value);
@@ -27,7 +37,7 @@ function Contact() {
   };
 
   let showAlert = (e) => {
-    let items = {name, email, phone, message};
+    let items = { name, email, phone, message };
     e.preventDefault();
     console.log(items);
     Swal.fire({
@@ -45,10 +55,28 @@ function Contact() {
         email !== "" &&
         phone !== undefined
       ) {
+        e.preventDefault();
+
+        emailjs
+          .sendForm(
+            "service_yhnpp9z",
+            "template_fpzesjs",
+            form.current,
+            "HSIxOYZKpT1nGsBPP"
+          )
+          .then(
+            (result) => {
+              console.log("send email = ", result.text);
+            },
+            (error) => {
+              console.log("send email error = ", error.text);
+            }
+          );
         Swal.fire({
           icon: "success",
           text: "Email was successfully sending ...",
         });
+        resetForm()
       } else if (
         Swal.fire({
           icon: "error",
@@ -62,7 +90,7 @@ function Contact() {
     <div>
       <NavBar />
       <Container>
-        <form>
+        <form ref={form} onSubmit={showAlert}>
           <Row>
             <div className="prop">
               <Col style={{ textAlign: "center", marginTop: "3%" }} sm={12}>
@@ -84,6 +112,7 @@ function Contact() {
                       placeholder="Mr.Samson Sukdee"
                       onChange={changeName}
                       value={name}
+                      name="name"
                       required
                     />
                   </Form.Group>
@@ -95,6 +124,7 @@ function Contact() {
                       placeholder="samson.sd@gmail.com"
                       onChange={changeEmail}
                       value={email}
+                      name="email"
                       required
                     />
                   </Form.Group>
@@ -107,6 +137,7 @@ function Contact() {
                       maxLength="10"
                       onChange={changePhone}
                       value={phone}
+                      name="phone"
                       required
                     />
                   </Form.Group>
@@ -121,6 +152,7 @@ function Contact() {
                       rows={3}
                       onChange={changeMessage}
                       value={message}
+                      name="message"
                     />
                   </Form.Group>
 
@@ -156,7 +188,7 @@ function Contact() {
                     style={{ width: "100%" }}
                     variant="dark"
                     type="submit"
-                    onClick={showAlert}
+                    // onClick={showAlert}
                   >
                     Send Contact
                   </Button>
