@@ -19,18 +19,11 @@ function Home() {
             <Row>
               <Col sm={4}>
                 <img
+                  className="my-pf"
                   src={Me}
                   alt="profile"
                   width="70%"
                   height="70%"
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    marginTop: "30%",
-                    marginLeft: "auto",
-                    marginRight: "auto",
-                    borderRadius:"20px",
-                  }}
                 ></img>
               </Col>
               <Col style={{ textAlign: "center", marginTop: "10%" }} sm={7}>
