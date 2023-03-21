@@ -2,8 +2,10 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col, Navbar } from "react-bootstrap";
 import NavBar from "../components/NavBar";
-import { BsFacebook, BsInstagram, BsFillPeopleFill } from "react-icons/bs";
-import { AiFillGithub, AiTwotoneMail, AiTwotonePhone } from "react-icons/ai";
+import { BsFacebook, BsInstagram } from "react-icons/bs";
+import { AiFillGithub, AiTwotoneMail, AiTwotonePhone , AiTwotoneCalendar } from "react-icons/ai"; 
+import { FaGraduationCap } from "react-icons/fa"
+import { MdGrade } from "react-icons/md"
 import Me from "../assets/whitepf.png";
 import "../App.css";
 function Home() {
@@ -26,18 +28,38 @@ function Home() {
                   height="70%"
                 ></img>
               </Col>
-              <Col style={{ textAlign: "center", marginTop: "10%" }} sm={7}>
+              <Col style={{ textAlign: "center", marginTop: "6%" }} sm={7}>
                 <h3>I'm Pavaret Wisarut</h3>
                 <h5>Programmer , Backend Developer</h5>
                 <hr></hr>
                 <h6>
                   <b>
-                    <BsFillPeopleFill
+                    <AiTwotoneCalendar
                       style={{ marginRight: "1%", marginBottom: "1%" }}
                     />
-                    Age
+                    DOB
                   </b>{" "}
                   : 24 November 2000
+                </h6>
+                <hr></hr>
+                <h6>
+                  <b>
+                    <FaGraduationCap
+                      style={{ marginRight: "1%", marginBottom: "1%" }}
+                    />
+                    Graduate
+                  </b>{" "}
+                  : Chandrakasem Rajabhat University
+                </h6>
+                <hr></hr>
+                <h6>
+                  <b>
+                    <MdGrade
+                      style={{ marginRight: "1%", marginBottom: "1%" }}
+                    />
+                    Major
+                  </b>{" "}
+                  : Information Technology
                 </h6>
                 <hr></hr>
                 <h6>
